@@ -1,0 +1,10 @@
+body {
+  font-family: system-ui;
+  text-align: center;
+}
+.result {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 100px auto;
+}

@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer,
+header {
+  width: 100%;
+  background-color: darkred;
+  height: 250px;
+}
+
+footer {
+  height: 500px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sidebar {
+  position: relative;
+  width: 400px;
+  background-color: lightyellow;
+  height: 200vh;
+  padding: 10px;
+}
+
+.box-item {
+  height: 100px;
+  background-color: green;
+  width: 400px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}

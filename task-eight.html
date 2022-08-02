@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #myDIV {
+        border: 2px solid black;
+        height: 250px;
+        width: 250px;
+        overflow: auto;
+      }
+
+      #content {
+        height: 100vh;
+        width: 2000px;
+        background-color: coral;
+      }
+      #demo {
+        padding: 20px;
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Element Object</h1>
+    <h2>The scrollTop and scrollLeft Properties</h2>
+
+    <p>
+      Scroll the content below to display the number of pixels it is scrolled.
+    </p>
+
+    <div id="myDIV" onscroll="myFunction()">
+      <div id="content">Scroll me!</div>
+      <div id="content">Scroll me!</div>
+      <div id="content">Scroll me!</div>
+    </div>
+    <!-- <div id="myDIV" onscroll="myFunction()">
+      <div id="content">Scroll me!</div>
+    </div>
+    <div id="myDIV" onscroll="myFunction()">
+      <div id="content">Scroll me!</div>
+    </div> -->
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        const element = document.getElementById('myDIV');
+        let x = element.scrollLeft;
+        let y = element.scrollTop;
+        document.getElementById('demo').innerHTML =
+          'Horizontally: ' + x.toFixed() + '<br>Vertically: ' + y.toFixed();
+      }
+    </script>
+  </body>
+</html>
